@@ -6,7 +6,7 @@
    Professional beauty industry aesthetic with refined typography and subtle animations
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+/* Google Fonts loaded via link in HTML for better mobile compatibility */
 
 @layer base {
   :root {
@@ -116,7 +116,7 @@
   }
 
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background-color: hsl(240 12% 6%);
   }
 
@@ -127,7 +127,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: Georgia, 'Times New Roman', serif;
   }
 }
 

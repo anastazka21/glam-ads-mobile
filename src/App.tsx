@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import GeneratorSelector from "./pages/GeneratorSelector";
 import ReportGenerator from "./pages/ReportGenerator";
 import InvoiceGenerator from "./pages/InvoiceGenerator";
@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<GeneratorSelector />} />
           <Route path="/report-generator" element={<ReportGenerator />} />
@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/presentation-generator" element={<PresentationGenerator />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );

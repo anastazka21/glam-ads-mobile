@@ -313,10 +313,10 @@ const ReportGenerator = () => {
                   </Button>
                 </div>
               </div>
-              <div className="relative group">
+            <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-pink-500/10 to-primary/20 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
-                <div className="relative border-2 border-border/60 rounded-2xl overflow-hidden shadow-2xl shadow-black/40 ring-1 ring-white/5">
-                  <div className="transform scale-[0.6] origin-top-left w-[166%]">
+                <div className="relative border-2 border-border/60 rounded-2xl overflow-auto shadow-2xl shadow-black/40 ring-1 ring-white/5 max-h-[70vh]">
+                  <div className="transform scale-50 sm:scale-[0.6] origin-top-left w-[200%] sm:w-[166%]">
                     <ReportPreview data={reportData} />
                   </div>
                 </div>
