@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.lovable.2482198607784cd7a53786166b53ce81',
+  appId: 'pl.aurine.documentstudio',
   appName: 'Aurine Document Studio',
   webDir: 'dist',
   server: {
