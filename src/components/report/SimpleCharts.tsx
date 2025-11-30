@@ -65,7 +65,8 @@ export const SimplePieChart = ({ data, size = 200 }: { data: PieChartData[]; siz
         y={centerY}
         textAnchor="middle"
         dominantBaseline="middle"
-        className="fill-foreground text-2xl font-bold"
+        fill="currentColor"
+        style={{ fontSize: `${size * 0.15}px`, fontWeight: 'bold' }}
       >
         {data[0]?.value.toFixed(0)}%
       </text>
@@ -103,7 +104,8 @@ export const SimpleBarChart = ({ data, height = 200 }: { data: BarChartData[]; h
               x={`${x + barWidth * 0.4}%`}
               y={height - 5}
               textAnchor="middle"
-              className="fill-muted-foreground text-[8px]"
+              fill="#71717a"
+              style={{ fontSize: '8px' }}
             >
               {item.name}
             </text>
@@ -154,7 +156,8 @@ export const SimpleLineChart = ({ data, height = 200 }: { data: LineChartData[];
           x={`${(i / (data.length - 1)) * 100}%`}
           y={height - 5}
           textAnchor="middle"
-          className="fill-muted-foreground text-[8px]"
+          fill="#71717a"
+          style={{ fontSize: '8px' }}
         >
           {item.name}
         </text>
