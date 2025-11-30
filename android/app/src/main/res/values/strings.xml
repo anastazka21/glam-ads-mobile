@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Aurine Document Studio</string>
+    <string name="title_activity_main">Aurine Document Studio</string>
+    <string name="package_name">pl.aurine.documentstudio</string>
+    <string name="custom_url_scheme">pl.aurine.documentstudio</string>
+</resources>
